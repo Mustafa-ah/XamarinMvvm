@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cancelled_" xml:space="preserve">
+    <value>Cancelled!</value>
+    <comment>!</comment>
+  </data>
+  <data name="CartViewModel.cart" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="confirmDelete_" xml:space="preserve">
+    <value>Confirm Delete</value>
+  </data>
+  <data name="deleted_" xml:space="preserve">
+    <value>Deleted!</value>
+  </data>
+  <data name="CartViewModel.inCart" xml:space="preserve">
+    <value>Product(s) In Cart</value>
+  </data>
+  <data name="CartViewModel.no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="CartViewModel.pay" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="ruSure_" xml:space="preserve">
+    <value>Are You Sure You Want To Delete This Product From Cart</value>
+  </data>
+  <data name="CartViewModel.sar" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="CartViewModel.total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="CartViewModel.yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="FillteringViewModel.categoris" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="HomeViewModel.categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="HomeViewModel.home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HomeViewModel.myAcount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="HomeViewModel.settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="HomeViewModel.stors" xml:space="preserve">
+    <value>Stors</value>
+  </data>
+  <data name="SearchViewModel.Cat" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="SearchViewModel.PriceFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="SearchViewModel.PriceTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="SearchViewModel.Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchViewModel.SearchWord" xml:space="preserve">
+    <value>Key Word</value>
+  </data>
+  <data name="SearchViewModel.Store" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="SettingViewModel.test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="SortingViewModel.grid" xml:space="preserve">
+    <value>Grid</value>
+  </data>
+  <data name="SortingViewModel.lastUpdate" xml:space="preserve">
+    <value>Last Update</value>
+  </data>
+  <data name="SortingViewModel.list" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="SortingViewModel.nameAZ" xml:space="preserve">
+    <value>Name A to Z</value>
+  </data>
+  <data name="SortingViewModel.nameZA" xml:space="preserve">
+    <value>Name Z to A</value>
+  </data>
+  <data name="SortingViewModel.position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="SortingViewModel.priceHL" xml:space="preserve">
+    <value>Price High to Low</value>
+  </data>
+  <data name="SortingViewModel.priceLH" xml:space="preserve">
+    <value>Price Low to High</value>
+  </data>
+  <data name="SortingViewModel.sortBy" xml:space="preserve">
+    <value>Sort by</value>
+  </data>
+  <data name="SortingViewModel.ViewAs" xml:space="preserve">
+    <value>View As</value>
+  </data>
+  <data name="SubHomeViewModel.categores" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="SubHomeViewModel.prodcuts" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="SubHomeViewModel.showAll" xml:space="preserve">
+    <value>Show All</value>
+  </data>
+  <data name="SubHomeViewModel.sponsors" xml:space="preserve">
+    <value>Sponsors</value>
+  </data>
+  <data name="currency" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="FavouriteViewModel.currency" xml:space="preserve">
+    <value>SAR</value>
+  </data>
+  <data name="adress_" xml:space="preserve">
+    <value>ADDRESS</value>
+  </data>
+  <data name="CartViewModel.EmpatyMsg" xml:space="preserve">
+    <value>Cart Is Empty !</value>
+  </data>
+  <data name="CheckoutAdressViewModel.addAdress" xml:space="preserve">
+    <value>Add New Address</value>
+  </data>
+  <data name="CheckoutAdressViewModel.adresses" xml:space="preserve">
+    <value>Addresses</value>
+  </data>
+  <data name="CheckoutAdressViewModel.chooseAdress" xml:space="preserve">
+    <value>You have to choose address</value>
+  </data>
+  <data name="CheckoutAdressViewModel.SelectBillAdress" xml:space="preserve">
+    <value>Select Billing Address</value>
+  </data>
+  <data name="CheckoutAdressViewModel.SelectShipAdress" xml:space="preserve">
+    <value>Select Shipping Address</value>
+  </data>
+  <data name="CheckoutAdressViewModel.shipMethod" xml:space="preserve">
+    <value>Ship Method</value>
+  </data>
+  <data name="CheckoutAdressViewModel.shipToSamAdress" xml:space="preserve">
+    <value>Ship to same address</value>
+  </data>
+  <data name="noInterner_" xml:space="preserve">
+    <value>No internet available</value>
+  </data>
+  <data name="ok_" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="payment_" xml:space="preserve">
+    <value>PAYMENT</value>
+  </data>
+  <data name="shiipping_" xml:space="preserve">
+    <value>SHIPPING</value>
+  </data>
+  <data name="summery_" xml:space="preserve">
+    <value>SUMMARY</value>
+  </data>
+  <data name="tomoor_" xml:space="preserve">
+    <value>Tomoor</value>
+  </data>
+  <data name="CheckoutPaymentViewModel.payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="CheckoutPaymentViewModel.SelectPaymentMethod" xml:space="preserve">
+    <value>Select Payment Method</value>
+  </data>
+  <data name="CheckoutPaymentViewModel.summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="CheckoutShippingViewModel.paymentMethod" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="CheckoutShippingViewModel.SelectShippingMethod" xml:space="preserve">
+    <value>Select Shipping Method</value>
+  </data>
+  <data name="CheckoutShippingViewModel.shipping" xml:space="preserve">
+    <value>Shipping</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.billingAdress" xml:space="preserve">
+    <value>Billing  Address</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.confirm" xml:space="preserve">
+    <value>CONFIRM</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.orderComplet" xml:space="preserve">
+    <value>Order completed  successfully</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.orderNotComplet" xml:space="preserve">
+    <value>Order not completed !</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.shippngAdress" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.subtotal" xml:space="preserve">
+    <value>Subtotal</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="total_" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="deleteMsg_" xml:space="preserve">
+    <value>Undo Delete</value>
+  </data>
+  <data name="OrdersViewModel.orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="OrdersViewModel.orderStatus" xml:space="preserve">
+    <value>Order status</value>
+  </data>
+  <data name="OrdersViewModel.orderTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="OrdersViewModel.paymentStatus" xml:space="preserve">
+    <value>Payment Status</value>
+  </data>
+  <data name="OrdersViewModel.shippingStatus" xml:space="preserve">
+    <value>Shipping status</value>
+  </data>
+  <data name="undo_" xml:space="preserve">
+    <value>UNDO</value>
+  </data>
+  <data name="UserAccountViewModel.adresses" xml:space="preserve">
+    <value>Addresses</value>
+  </data>
+  <data name="UserAccountViewModel.logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="UserAccountViewModel.Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="UserAccountViewModel.pesonalData" xml:space="preserve">
+    <value>Personal Data</value>
+  </data>
+  <data name="cancel_" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UserAdressesViewModel.AddAdresses" xml:space="preserve">
+    <value>Add New Address</value>
+  </data>
+  <data name="UserAdressesViewModel.adresses" xml:space="preserve">
+    <value>Addresses</value>
+  </data>
+  <data name="UserAdressesViewModel.adressesNotDel" xml:space="preserve">
+    <value>Add New Address</value>
+  </data>
+  <data name="UserAdressesViewModel.deleteAdresses" xml:space="preserve">
+    <value>Delete this address ?</value>
+  </data>
+  <data name="buildingNumber_" xml:space="preserve">
+    <value>Building Number</value>
+  </data>
+  <data name="city_" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="company_" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="country_" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="email_" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="firstName_" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lastName_" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="phoneNumber_" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="save_" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="StreentNameNumber_" xml:space="preserve">
+    <value>Street Name, Number</value>
+  </data>
+  <data name="SettingViewModel.choseLang" xml:space="preserve">
+    <value>choose language</value>
+  </data>
+  <data name="SettingViewModel.restartApp" xml:space="preserve">
+    <value>Save And Restart App Now ?</value>
+  </data>
+  <data name="birthday_" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="gender_" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="password_" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="retypePassword_" xml:space="preserve">
+    <value> Retype Password</value>
+  </data>
+  <data name="userName_" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="female_" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="male_" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="SignupViewModel.signup" xml:space="preserve">
+    <value>Signup</value>
+  </data>
+  <data name="LoginViewModel.facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="LoginViewModel.forgetPassword" xml:space="preserve">
+    <value>Forgot Password ?</value>
+  </data>
+  <data name="LoginViewModel.google" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="LoginViewModel.login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginViewModel.or" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="LoginViewModel.signup" xml:space="preserve">
+    <value>Signup</value>
+  </data>
+  <data name="LoginViewModel.twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="UserAccountViewModel.logoutMsg" xml:space="preserve">
+    <value>Continue Logout ?</value>
+  </data>
+  <data name="enterBirthDayMsg_" xml:space="preserve">
+    <value>Select Birthday !</value>
+  </data>
+  <data name="enterEmailMsg_" xml:space="preserve">
+    <value>Enter Email !</value>
+  </data>
+  <data name="enterFistNameMsg_" xml:space="preserve">
+    <value>Enter First Name !</value>
+  </data>
+  <data name="enterGenderMsg_" xml:space="preserve">
+    <value>Choose Gender!</value>
+  </data>
+  <data name="enterLastNameMsg_" xml:space="preserve">
+    <value>Enter Last Name !</value>
+  </data>
+  <data name="enterPasswordMsg_" xml:space="preserve">
+    <value>Enter Password !</value>
+  </data>
+  <data name="enterValidEmailMsg_" xml:space="preserve">
+    <value>Enter Valid Email !</value>
+  </data>
+  <data name="loginFaildMsg_" xml:space="preserve">
+    <value>Login Failed !</value>
+  </data>
+  <data name="passwordNotMatchMsg_" xml:space="preserve">
+    <value>Passwords Not Matched !</value>
+  </data>
+  <data name="shortPasswordMsg_" xml:space="preserve">
+    <value>Password Must Be More than 6 characters !</value>
+  </data>
+  <data name="signupFaildMsg_" xml:space="preserve">
+    <value>Signup Failed !</value>
+  </data>
+  <data name="signupSucsessMsg_" xml:space="preserve">
+    <value>Activation link has been sent to your Email</value>
+  </data>
+  <data name="dataNotSavedMsg_" xml:space="preserve">
+    <value>Data Not Saved !</value>
+  </data>
+  <data name="dataSavedMsg_" xml:space="preserve">
+    <value>Data Saved Successfully</value>
+  </data>
+  <data name="selectCityMsg_" xml:space="preserve">
+    <value>Select City !</value>
+  </data>
+  <data name="ChoosePaymentMethod_" xml:space="preserve">
+    <value>Choose Payment Method !</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.paymentMethodFess" xml:space="preserve">
+    <value>Payment Method Fees</value>
+  </data>
+  <data name="UserAdressViewModel.adressAdded" xml:space="preserve">
+    <value>Address has been added</value>
+  </data>
+  <data name="UserAdressViewModel.adressNotAdded" xml:space="preserve">
+    <value>Address has not been added</value>
+  </data>
+  <data name="UserAdressViewModel.adressNotupdated" xml:space="preserve">
+    <value>Address has not been updated</value>
+  </data>
+  <data name="UserAdressViewModel.adressupdated" xml:space="preserve">
+    <value>Address has been updated</value>
+  </data>
+  <data name="ProductsReviewsViewModel.noReviewsYet" xml:space="preserve">
+    <value>No Reviews yet !</value>
+  </data>
+  <data name="ProductsReviewViewModel.bad" xml:space="preserve">
+    <value>Bad</value>
+  </data>
+  <data name="ProductsReviewViewModel.comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="ProductsReviewViewModel.done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ProductsReviewViewModel.fail" xml:space="preserve">
+    <value>Failed to send review</value>
+  </data>
+  <data name="ProductsReviewViewModel.good" xml:space="preserve">
+    <value>Good</value>
+  </data>
+  <data name="ProductsReviewViewModel.iLike" xml:space="preserve">
+    <value>I Like it</value>
+  </data>
+  <data name="ProductsReviewViewModel.iLove" xml:space="preserve">
+    <value>I Love it</value>
+  </data>
+  <data name="ProductsReviewViewModel.makeRate" xml:space="preserve">
+    <value>Please make review</value>
+  </data>
+  <data name="ProductsReviewViewModel.notGoog" xml:space="preserve">
+    <value>Not Good</value>
+  </data>
+  <data name="ProductsReviewViewModel.rate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="ProductViewModel.addToCart" xml:space="preserve">
+    <value>Add To Cart</value>
+  </data>
+  <data name="ProductViewModel.comment" xml:space="preserve">
+    <value>Comment(s)</value>
+  </data>
+  <data name="FavouriteViewModel.favourite" xml:space="preserve">
+    <value>Favourite</value>
+  </data>
+  <data name="hitBackToExit_" xml:space="preserve">
+    <value>Hit back again to Exit</value>
+  </data>
+  <data name="changePassword_" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangPasswordViewModel.enterNewPassword" xml:space="preserve">
+    <value>Enter New Password !</value>
+  </data>
+  <data name="ChangPasswordViewModel.enterOldPaswword" xml:space="preserve">
+    <value>Enter Old Password !</value>
+  </data>
+  <data name="ChangPasswordViewModel.newPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="ChangPasswordViewModel.oldPaswword" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="ChangPasswordViewModel.passwordChanged" xml:space="preserve">
+    <value>password has been changed successfully</value>
+  </data>
+  <data name="ChangPasswordViewModel.passwordNotChanged" xml:space="preserve">
+    <value>password has been not changed !</value>
+  </data>
+  <data name="ChangPasswordViewModel.retype NewPassword" xml:space="preserve">
+    <value>Retype New Password</value>
+  </data>
+  <data name="RecoverAccountViewModel.recover" xml:space="preserve">
+    <value>Recover Account</value>
+  </data>
+  <data name="RecoverAccountViewModel.recoverdMsg" xml:space="preserve">
+    <value>Recovering completed , Activation code has been sent , please check your Inbox</value>
+  </data>
+  <data name="RecoverAccountViewModel.unRecoverdMsg" xml:space="preserve">
+    <value>No account related to this Email !</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.enterCode" xml:space="preserve">
+    <value>Enter code</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.enterNewPassword" xml:space="preserve">
+    <value>Enter New Password</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.newPassword" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.notRecoverdMsg" xml:space="preserve">
+    <value>Not Recoverd !</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.recover" xml:space="preserve">
+    <value>Recover Account</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.recoverdMsg" xml:space="preserve">
+    <value>Recovering completed</value>
+  </data>
+  <data name="SettingViewModel.aboutUs" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="SettingViewModel.contactUs" xml:space="preserve">
+    <value>Contact US</value>
+  </data>
+  <data name="SettingViewModel.termesOfUse" xml:space="preserve">
+    <value>Terms Of Use</value>
+  </data>
+</root>

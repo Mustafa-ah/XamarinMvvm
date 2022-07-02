@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58F842EF-E4C5-4265-A229-612218036204}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ayadi.Core</RootNamespace>
+    <AssemblyName>Ayadi.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AkavacheSqliteLinkerOverride.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="AppStart.cs" />
+    <Compile Include="Contracts\Repository\ICartRepository.cs" />
+    <Compile Include="Contracts\Repository\ICategoryRepository.cs" />
+    <Compile Include="Contracts\Repository\IFavouriteRepository.cs" />
+    <Compile Include="Contracts\Repository\IOrderRepository.cs" />
+    <Compile Include="Contracts\Repository\IProductRepository.cs" />
+    <Compile Include="Contracts\Repository\ISettingRepository.cs" />
+    <Compile Include="Contracts\Repository\ISponserRepository.cs" />
+    <Compile Include="Contracts\Repository\IStoreRepository.cs" />
+    <Compile Include="Contracts\Repository\IUserRepository.cs" />
+    <Compile Include="Contracts\Services\ICartDataService.cs" />
+    <Compile Include="Contracts\Services\ICategoryDataService.cs" />
+    <Compile Include="Contracts\Services\IConnectionService.cs" />
+    <Compile Include="Contracts\Services\IDialogService.cs" />
+    <Compile Include="Contracts\Services\IFavouriteDataService.cs" />
+    <Compile Include="Contracts\Services\IHomeActivityUiService.cs" />
+    <Compile Include="Contracts\Services\ILoadingDataService.cs" />
+    <Compile Include="Contracts\Services\IOrderDataService.cs" />
+    <Compile Include="Contracts\Services\IProductsDataService.cs" />
+    <Compile Include="Contracts\Services\ISearchDataService.cs" />
+    <Compile Include="Contracts\Services\ISettingDataService.cs" />
+    <Compile Include="Contracts\Services\IStoreDataService.cs" />
+    <Compile Include="Contracts\Services\IUserDataService.cs" />
+    <Compile Include="Contracts\ViewModel\ICartViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ICategoryViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ICheckoutAdressViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ICheckoutPaymentViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ICheckoutShippingViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ICheckoutSummaryViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IFavouriteViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IFillteringViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IHomeViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ILoginViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IOrdersViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IProductsReviewsViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IProductsReviewViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IProductsViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IProductViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ISearchViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ISettingViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ISignupViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ISortingViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IStoreViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IStorsViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\ISubHomeViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IUserAccountViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IUserAdressesViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IUserAdressViewModel.cs" />
+    <Compile Include="Contracts\ViewModel\IUserDataViewModel.cs" />
+    <Compile Include="Converters\CurrencyToStringConverter.cs" />
+    <Compile Include="Converters\FavouriteImageValueConverter.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="Messages\AdresessUpdatedMessage.cs" />
+    <Compile Include="Messages\CartMessage.cs" />
+    <Compile Include="Messages\DeleteAdressMessage.cs" />
+    <Compile Include="Messages\FavouriteChangedMessage.cs" />
+    <Compile Include="Messages\FavouriteProductMessage.cs" />
+    <Compile Include="Messages\FilterMesaage.cs" />
+    <Compile Include="Messages\HomeUiMessage.cs" />
+    <Compile Include="Messages\LoginMessage.cs" />
+    <Compile Include="Messages\OrderMessage.cs" />
+    <Compile Include="Messages\ProductsViewMessage.cs" />
+    <Compile Include="Messages\ReloadeDataMessage.cs" />
+    <Compile Include="Messages\SearchMessage.cs" />
+    <Compile Include="Messages\ShoppingListMessage.cs" />
+    <Compile Include="Messages\SortMessage.cs" />
+    <Compile Include="Messages\TopHomeSliderMessage.cs" />
+    <Compile Include="Messages\UpdateAdressMessage.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\City.cs" />
+    <Compile Include="Model\Constants.cs" />
+    <Compile Include="Model\Country.cs" />
+    <Compile Include="Model\Gender.cs" />
+    <Compile Include="Model\Imager.cs" />
+    <Compile Include="Model\LocalizedNames.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\OrderItems.cs" />
+    <Compile Include="Model\PaymentMethod.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\Product_category_mappings.cs" />
+    <Compile Include="Model\Response.cs" />
+    <Compile Include="Model\Review.cs" />
+    <Compile Include="Model\ReviewItems.cs" />
+    <Compile Include="Model\ShoppingCart.cs" />
+    <Compile Include="Model\Sponser.cs" />
+    <Compile Include="Model\SponserSlider.cs" />
+    <Compile Include="Model\Store.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserAdress.cs" />
+    <Compile Include="Model\UserPassword.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\CartRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\FavouriteRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\SettingRepository.cs" />
+    <Compile Include="Repositories\SponserRepository.cs" />
+    <Compile Include="Repositories\StoreRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Services\Data\CartDataService.cs" />
+    <Compile Include="Services\Data\CategoryDataService.cs" />
+    <Compile Include="Services\Data\FavouriteDataService.cs" />
+    <Compile Include="Services\Data\OrderDataService.cs" />
+    <Compile Include="Services\Data\ProductsDataService.cs" />
+    <Compile Include="Services\Data\SearchDataService.cs" />
+    <Compile Include="Services\Data\SettingDataService.cs" />
+    <Compile Include="Services\Data\StoreDataService.cs" />
+    <Compile Include="Services\Data\UserDataService.cs" />
+    <Compile Include="Services\General\ConnectionService.cs" />
+    <Compile Include="Utility\HelperTools.cs" />
+    <Compile Include="Utility\ResxTextProvider.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\ChangPasswordViewModel.cs" />
+    <Compile Include="ViewModel\CartViewModel.cs" />
+    <Compile Include="ViewModel\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\CheckoutAdressViewModel.cs" />
+    <Compile Include="ViewModel\CheckoutPaymentViewModel.cs" />
+    <Compile Include="ViewModel\CheckoutShippingViewModel.cs" />
+    <Compile Include="ViewModel\CheckoutSummaryViewModel.cs" />
+    <Compile Include="ViewModel\FavouriteViewModel.cs" />
+    <Compile Include="ViewModel\FillteringViewModel.cs" />
+    <Compile Include="ViewModel\HomeViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\OrdersViewModel.cs" />
+    <Compile Include="ViewModel\ProductsReviewsViewModel.cs" />
+    <Compile Include="ViewModel\ProductsReviewViewModel.cs" />
+    <Compile Include="ViewModel\ProductsViewModel.cs" />
+    <Compile Include="ViewModel\ProductViewModel.cs" />
+    <Compile Include="ViewModel\RecoverAccountViewModel.cs" />
+    <Compile Include="ViewModel\SearchViewModel.cs" />
+    <Compile Include="ViewModel\SettingViewModel.cs" />
+    <Compile Include="ViewModel\SignupViewModel.cs" />
+    <Compile Include="ViewModel\SortingViewModel.cs" />
+    <Compile Include="ViewModel\StoreViewModel.cs" />
+    <Compile Include="ViewModel\StorsViewModel.cs" />
+    <Compile Include="ViewModel\SubHomeViewModel.cs" />
+    <Compile Include="ViewModel\UserAccountViewModel.cs" />
+    <Compile Include="ViewModel\UserAdressesViewModel.cs" />
+    <Compile Include="ViewModel\UserAdressViewModel.cs" />
+    <Compile Include="ViewModel\UserDataViewModel.cs" />
+    <Compile Include="ViewModel\WriteNewPasswordViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Akavache, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\akavache.core.5.0.0\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Akavache.Sqlite3, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\akavache.sqlite3.5.0.0\lib\Portable-Net45+Win8+WP8+Wpa81\Akavache.Sqlite3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FFImageLoading, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.2.15\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FFImageLoading.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.FFImageLoading.2.2.15\lib\portable-net45+win8+wpa81+wp8\FFImageLoading.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net45+win8+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Binding, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Binding.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Binding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Core, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Core.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Droid.Support.V7.Fragging">
+      <HintPath>..\MvvmCross.Droid.Support.V7.Fragging.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Binding.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Platform, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Platform.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.DownloadCache.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.File.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.File.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Json, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.Json.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Messenger, Version=5.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.Messenger.5.1.1\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Messenger.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.WebBrowser, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.WebBrowser.4.1.6\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.WebBrowser.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Connectivity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\netstandard1.0\Plugin.Connectivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.2\lib\netstandard1.0\Plugin.Connectivity.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp.Portable.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubarCoder.RestSharp.Portable.Core.3.3.0\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\RestSharp.Portable.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp.Portable.HttpClient, Version=3.3.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubarCoder.RestSharp.Portable.HttpClient.3.3.0\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\RestSharp.Portable.HttpClient.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Splat, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.1.6.0\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_e_sqlite3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=17faffbb2a73a73f, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_e_sqlite3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.batteries_v2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8226ea5df37bcae9, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.bundle_e_sqlite3.1.1.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.batteries_v2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCLRaw.core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1488e028ca7ab535, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLitePCLRaw.core.1.1.0\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCLRaw.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ayadi.Localization\Ayadi.Localization.csproj">
+      <Project>{c2a02afb-7cc1-4542-93cb-68573b045188}</Project>
+      <Name>Ayadi.Localization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

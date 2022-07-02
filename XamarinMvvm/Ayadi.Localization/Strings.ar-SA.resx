@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cancelled_" xml:space="preserve">
+    <value>تم الغاء الحذف</value>
+  </data>
+  <data name="CartViewModel.cart" xml:space="preserve">
+    <value>عربة التسوق</value>
+  </data>
+  <data name="confirmDelete_" xml:space="preserve">
+    <value>تأكيد حذف</value>
+  </data>
+  <data name="deleted_" xml:space="preserve">
+    <value>تم حذف المنتج من العربة</value>
+  </data>
+  <data name="CartViewModel.inCart" xml:space="preserve">
+    <value>منتج فى عربة التسوق</value>
+  </data>
+  <data name="CartViewModel.no" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="CartViewModel.pay" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+  <data name="ruSure_" xml:space="preserve">
+    <value>هل انت متأكد انك تريد حذف هذا المنتج من عربة التسوق ؟</value>
+  </data>
+  <data name="CartViewModel.sar" xml:space="preserve">
+    <value>ريال</value>
+  </data>
+  <data name="CartViewModel.total" xml:space="preserve">
+    <value>الاجمالى</value>
+  </data>
+  <data name="CartViewModel.yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="FillteringViewModel.categoris" xml:space="preserve">
+    <value>الفئات</value>
+  </data>
+  <data name="HomeViewModel.categories" xml:space="preserve">
+    <value>الفئات</value>
+  </data>
+  <data name="HomeViewModel.home" xml:space="preserve">
+    <value>الرئيسية</value>
+  </data>
+  <data name="HomeViewModel.myAcount" xml:space="preserve">
+    <value>حسابى</value>
+  </data>
+  <data name="HomeViewModel.settings" xml:space="preserve">
+    <value>اعدادات</value>
+  </data>
+  <data name="HomeViewModel.stors" xml:space="preserve">
+    <value>المتاجر</value>
+  </data>
+  <data name="SearchViewModel.Cat" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="SearchViewModel.PriceFrom" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="SearchViewModel.PriceTo" xml:space="preserve">
+    <value>الى</value>
+  </data>
+  <data name="SearchViewModel.Search" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="SearchViewModel.SearchWord" xml:space="preserve">
+    <value>كلمة البحث</value>
+  </data>
+  <data name="SearchViewModel.Store" xml:space="preserve">
+    <value>البائع</value>
+  </data>
+  <data name="SettingViewModel.test" xml:space="preserve">
+    <value>اختبار</value>
+  </data>
+  <data name="SortingViewModel.grid" xml:space="preserve">
+    <value>شبكة</value>
+  </data>
+  <data name="SortingViewModel.lastUpdate" xml:space="preserve">
+    <value>الاحدث</value>
+  </data>
+  <data name="SortingViewModel.list" xml:space="preserve">
+    <value>قائمة</value>
+  </data>
+  <data name="SortingViewModel.nameAZ" xml:space="preserve">
+    <value>الاسم أ الى ي</value>
+  </data>
+  <data name="SortingViewModel.nameZA" xml:space="preserve">
+    <value>الاسم ي الى أ</value>
+  </data>
+  <data name="SortingViewModel.position" xml:space="preserve">
+    <value>المكان</value>
+  </data>
+  <data name="SortingViewModel.priceHL" xml:space="preserve">
+    <value>السعر من الاكثر للاقل</value>
+  </data>
+  <data name="SortingViewModel.priceLH" xml:space="preserve">
+    <value>السعر من الاقل للاكثر</value>
+  </data>
+  <data name="SortingViewModel.sortBy" xml:space="preserve">
+    <value>ترتيب حسب</value>
+  </data>
+  <data name="SortingViewModel.ViewAs" xml:space="preserve">
+    <value>عرض بطريقة</value>
+  </data>
+  <data name="SubHomeViewModel.categores" xml:space="preserve">
+    <value>الفئات</value>
+  </data>
+  <data name="SubHomeViewModel.prodcuts" xml:space="preserve">
+    <value>المنتجات</value>
+  </data>
+  <data name="SubHomeViewModel.showAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+  <data name="SubHomeViewModel.sponsors" xml:space="preserve">
+    <value>برعاية</value>
+  </data>
+  <data name="currency" xml:space="preserve">
+    <value>ريال</value>
+  </data>
+  <data name="FavouriteViewModel.currency" xml:space="preserve">
+    <value>ريال</value>
+  </data>
+  <data name="adress_" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="CartViewModel.EmpatyMsg" xml:space="preserve">
+    <value>السلة فارغة !</value>
+  </data>
+  <data name="CheckoutAdressViewModel.addAdress" xml:space="preserve">
+    <value>إضافة عنوان جديد</value>
+  </data>
+  <data name="CheckoutAdressViewModel.adresses" xml:space="preserve">
+    <value>العناوين</value>
+  </data>
+  <data name="CheckoutAdressViewModel.chooseAdress" xml:space="preserve">
+    <value>يجب اختيار عنوان</value>
+  </data>
+  <data name="CheckoutAdressViewModel.SelectBillAdress" xml:space="preserve">
+    <value>اختر عنوان الدفع</value>
+  </data>
+  <data name="CheckoutAdressViewModel.SelectShipAdress" xml:space="preserve">
+    <value>اختر عنوان الشحن</value>
+  </data>
+  <data name="CheckoutAdressViewModel.shipMethod" xml:space="preserve">
+    <value> طريقة الشحن</value>
+  </data>
+  <data name="CheckoutAdressViewModel.shipToSamAdress" xml:space="preserve">
+    <value>الشحن الى نفس العنوان</value>
+  </data>
+  <data name="noInterner_" xml:space="preserve">
+    <value>لايوجد اتصال بالانترنت</value>
+  </data>
+  <data name="ok_" xml:space="preserve">
+    <value>موافق</value>
+  </data>
+  <data name="payment_" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+  <data name="shiipping_" xml:space="preserve">
+    <value>الشحن</value>
+  </data>
+  <data name="summery_" xml:space="preserve">
+    <value>المجمل</value>
+  </data>
+  <data name="tomoor_" xml:space="preserve">
+    <value>تمور</value>
+  </data>
+  <data name="CheckoutPaymentViewModel.payment" xml:space="preserve">
+    <value>الدفع</value>
+  </data>
+  <data name="CheckoutPaymentViewModel.SelectPaymentMethod" xml:space="preserve">
+    <value>اختر طريقة الدفع</value>
+  </data>
+  <data name="CheckoutPaymentViewModel.summary" xml:space="preserve">
+    <value>المجمل</value>
+  </data>
+  <data name="CheckoutShippingViewModel.paymentMethod" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="CheckoutShippingViewModel.SelectShippingMethod" xml:space="preserve">
+    <value>اختر طريقة الشحن</value>
+  </data>
+  <data name="CheckoutShippingViewModel.shipping" xml:space="preserve">
+    <value>الشحن</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.billingAdress" xml:space="preserve">
+    <value>عنوان الدفع</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.confirm" xml:space="preserve">
+    <value>تأكيد الشراء</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.orderComplet" xml:space="preserve">
+    <value>تمت العمليه بنجاح</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.orderNotComplet" xml:space="preserve">
+    <value>! لم يتم التأكيد</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.products" xml:space="preserve">
+    <value>المنتجات</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.shippngAdress" xml:space="preserve">
+    <value>عنوان الشحن</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.subtotal" xml:space="preserve">
+    <value>اجمالى المنتجات</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.summary" xml:space="preserve">
+    <value>المجمل</value>
+  </data>
+  <data name="total_" xml:space="preserve">
+    <value>الاجمالى</value>
+  </data>
+  <data name="deleteMsg_" xml:space="preserve">
+    <value>تراجع عن الحذف</value>
+  </data>
+  <data name="OrdersViewModel.orders" xml:space="preserve">
+    <value>الطلبات</value>
+  </data>
+  <data name="OrdersViewModel.orderStatus" xml:space="preserve">
+    <value>حالة الطلب</value>
+  </data>
+  <data name="OrdersViewModel.orderTotal" xml:space="preserve">
+    <value>اجمالى الطلب</value>
+  </data>
+  <data name="OrdersViewModel.paymentStatus" xml:space="preserve">
+    <value>حالة الدفع</value>
+  </data>
+  <data name="OrdersViewModel.shippingStatus" xml:space="preserve">
+    <value>حالة الشحن</value>
+  </data>
+  <data name="undo_" xml:space="preserve">
+    <value>تراجع</value>
+  </data>
+  <data name="UserAccountViewModel.adresses" xml:space="preserve">
+    <value>العناوين</value>
+  </data>
+  <data name="UserAccountViewModel.logout" xml:space="preserve">
+    <value>تسجيل خروج</value>
+  </data>
+  <data name="UserAccountViewModel.Orders" xml:space="preserve">
+    <value>الطلبات</value>
+  </data>
+  <data name="UserAccountViewModel.pesonalData" xml:space="preserve">
+    <value>البيانات الشخصية</value>
+  </data>
+  <data name="cancel_" xml:space="preserve">
+    <value>الغاء</value>
+  </data>
+  <data name="UserAdressesViewModel.AddAdresses" xml:space="preserve">
+    <value>اضافة عنوان جديد</value>
+  </data>
+  <data name="UserAdressesViewModel.adresses" xml:space="preserve">
+    <value>العناوين</value>
+  </data>
+  <data name="UserAdressesViewModel.adressesNotDel" xml:space="preserve">
+    <value>لم يتم الحذف</value>
+  </data>
+  <data name="UserAdressesViewModel.deleteAdresses" xml:space="preserve">
+    <value>حذف هذا العنوان ؟</value>
+  </data>
+  <data name="buildingNumber_" xml:space="preserve">
+    <value>رقم المبنى</value>
+  </data>
+  <data name="city_" xml:space="preserve">
+    <value>المدينة</value>
+  </data>
+  <data name="company_" xml:space="preserve">
+    <value>الشركة</value>
+  </data>
+  <data name="country_" xml:space="preserve">
+    <value>الدولة</value>
+  </data>
+  <data name="email_" xml:space="preserve">
+    <value>البريد الالكترونى</value>
+  </data>
+  <data name="firstName_" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="lastName_" xml:space="preserve">
+    <value>اسم العائلة</value>
+  </data>
+  <data name="phoneNumber_" xml:space="preserve">
+    <value>رقم الموبايل</value>
+  </data>
+  <data name="save_" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="StreentNameNumber_" xml:space="preserve">
+    <value>اسم او رقم الشارع</value>
+  </data>
+  <data name="SettingViewModel.choseLang" xml:space="preserve">
+    <value> اختر لغة التطبيق </value>
+  </data>
+  <data name="SettingViewModel.restartApp" xml:space="preserve">
+    <value>حفظ و اعادة تشغيل التطبيق الان ؟</value>
+  </data>
+  <data name="birthday_" xml:space="preserve">
+    <value>تاريخ الميلاد</value>
+  </data>
+  <data name="gender_" xml:space="preserve">
+    <value>نوع الجنس</value>
+  </data>
+  <data name="password_" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="retypePassword_" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="userName_" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="female_" xml:space="preserve">
+    <value>انثى</value>
+  </data>
+  <data name="male_" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="SignupViewModel.signup" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="LoginViewModel.facebook" xml:space="preserve">
+    <value>فيسبوك</value>
+  </data>
+  <data name="LoginViewModel.forgetPassword" xml:space="preserve">
+    <value>نسيت كلمة السر ؟</value>
+  </data>
+  <data name="LoginViewModel.google" xml:space="preserve">
+    <value>جوجل</value>
+  </data>
+  <data name="LoginViewModel.login" xml:space="preserve">
+    <value>تسجيل دخول</value>
+  </data>
+  <data name="LoginViewModel.or" xml:space="preserve">
+    <value>أو</value>
+  </data>
+  <data name="LoginViewModel.signup" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="LoginViewModel.twitter" xml:space="preserve">
+    <value>تويتر</value>
+  </data>
+  <data name="UserAccountViewModel.logoutMsg" xml:space="preserve">
+    <value>تأكيد تسجيل الخروج ؟</value>
+  </data>
+  <data name="enterBirthDayMsg_" xml:space="preserve">
+    <value>اختر تاريخ الميلاد !</value>
+  </data>
+  <data name="enterEmailMsg_" xml:space="preserve">
+    <value>ادخل البريد الالكترونى </value>
+  </data>
+  <data name="enterFistNameMsg_" xml:space="preserve">
+    <value>أدخل الاسم الأول!</value>
+  </data>
+  <data name="enterGenderMsg_" xml:space="preserve">
+    <value>اختر الجنس!</value>
+  </data>
+  <data name="enterLastNameMsg_" xml:space="preserve">
+    <value>أدخل الاسم الاخير!</value>
+  </data>
+  <data name="enterPasswordMsg_" xml:space="preserve">
+    <value>ادخل كلمة المرور</value>
+  </data>
+  <data name="enterValidEmailMsg_" xml:space="preserve">
+    <value>أدخل بريد الإلكتروني صالح!</value>
+  </data>
+  <data name="loginFaildMsg_" xml:space="preserve">
+    <value>فشل تسجيل الدخول !</value>
+  </data>
+  <data name="passwordNotMatchMsg_" xml:space="preserve">
+    <value>كلمات المرور غير متطابقة!</value>
+  </data>
+  <data name="shortPasswordMsg_" xml:space="preserve">
+    <value>كلمة السر يجب أن يكون أكثر من 6 أحرف!</value>
+  </data>
+  <data name="signupFaildMsg_" xml:space="preserve">
+    <value>فشل التسجيل  !</value>
+  </data>
+  <data name="signupSucsessMsg_" xml:space="preserve">
+    <value>تم ارسال رابط تفعيل الحساب الى بريدك الالكترونى</value>
+  </data>
+  <data name="dataNotSavedMsg_" xml:space="preserve">
+    <value>لم يتم الحفظ</value>
+  </data>
+  <data name="dataSavedMsg_" xml:space="preserve">
+    <value>تم حفظ البيانات بنجاح</value>
+  </data>
+  <data name="selectCityMsg_" xml:space="preserve">
+    <value>اختر مدينه</value>
+  </data>
+  <data name="ChoosePaymentMethod_" xml:space="preserve">
+    <value>اختر طريقة الدفع</value>
+  </data>
+  <data name="CheckoutSummaryViewModel.paymentMethodFess" xml:space="preserve">
+    <value>رسوم طريقة الدفع</value>
+  </data>
+  <data name="UserAdressViewModel.adressAdded" xml:space="preserve">
+    <value>تم إضافة العنوان</value>
+  </data>
+  <data name="UserAdressViewModel.adressNotAdded" xml:space="preserve">
+    <value>لم يتم إضافة العنوان</value>
+  </data>
+  <data name="UserAdressViewModel.adressNotupdated" xml:space="preserve">
+    <value>لم يتم تحديث العنوان</value>
+  </data>
+  <data name="UserAdressViewModel.adressupdated" xml:space="preserve">
+    <value>تم تعديل العنوان</value>
+  </data>
+  <data name="ProductsReviewsViewModel.noReviewsYet" xml:space="preserve">
+    <value>لا يوجد تقييمات !</value>
+  </data>
+  <data name="ProductsReviewViewModel.bad" xml:space="preserve">
+    <value>سئ</value>
+  </data>
+  <data name="ProductsReviewViewModel.comment" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="ProductsReviewViewModel.done" xml:space="preserve">
+    <value>تم</value>
+  </data>
+  <data name="ProductsReviewViewModel.fail" xml:space="preserve">
+    <value>فشل إرسال التقييم</value>
+  </data>
+  <data name="ProductsReviewViewModel.good" xml:space="preserve">
+    <value>جيد</value>
+  </data>
+  <data name="ProductsReviewViewModel.iLike" xml:space="preserve">
+    <value>اعجبنى</value>
+  </data>
+  <data name="ProductsReviewViewModel.iLove" xml:space="preserve">
+    <value>احببته</value>
+  </data>
+  <data name="ProductsReviewViewModel.makeRate" xml:space="preserve">
+    <value>من فضلك قم بعمل تقييم</value>
+  </data>
+  <data name="ProductsReviewViewModel.notGoog" xml:space="preserve">
+    <value>غير جيد</value>
+  </data>
+  <data name="ProductsReviewViewModel.rate" xml:space="preserve">
+    <value>تقييم</value>
+  </data>
+  <data name="ProductViewModel.addToCart" xml:space="preserve">
+    <value>اضف الى السلة</value>
+  </data>
+  <data name="ProductViewModel.comment" xml:space="preserve">
+    <value>تعليق</value>
+  </data>
+  <data name="FavouriteViewModel.favourite" xml:space="preserve">
+    <value>المفضلة</value>
+  </data>
+  <data name="hitBackToExit_" xml:space="preserve">
+    <value>اضغط عودة مرة اخرى للخروج</value>
+  </data>
+  <data name="changePassword_" xml:space="preserve">
+    <value>تغيير كلمة السر</value>
+  </data>
+  <data name="ChangPasswordViewModel.enterNewPassword" xml:space="preserve">
+    <value>ادخل كلمة السر الجديدة</value>
+  </data>
+  <data name="ChangPasswordViewModel.enterOldPaswword" xml:space="preserve">
+    <value>ادخل كلمة السر القديمة</value>
+  </data>
+  <data name="ChangPasswordViewModel.newPassword" xml:space="preserve">
+    <value>كلمة السر الجديدة</value>
+  </data>
+  <data name="ChangPasswordViewModel.oldPaswword" xml:space="preserve">
+    <value>كلمة السر القديمة</value>
+  </data>
+  <data name="ChangPasswordViewModel.passwordChanged" xml:space="preserve">
+    <value>تم تغيير كلمة السر بنجاح</value>
+  </data>
+  <data name="ChangPasswordViewModel.passwordNotChanged" xml:space="preserve">
+    <value>لم يتم تغيير كلمة السر</value>
+  </data>
+  <data name="ChangPasswordViewModel.retype NewPassword" xml:space="preserve">
+    <value>أعد كتابة كلمة السر الجديدة</value>
+  </data>
+  <data name="RecoverAccountViewModel.recover" xml:space="preserve">
+    <value>إستعادة الحساب</value>
+  </data>
+  <data name="RecoverAccountViewModel.recoverdMsg" xml:space="preserve">
+    <value>تم إرسال كود التفعيل ، يرجى مراجعة البريد الإلكتروني الخاص بك</value>
+  </data>
+  <data name="RecoverAccountViewModel.unRecoverdMsg" xml:space="preserve">
+    <value>لا يوجد حساب لهذا البريد الإلكتروني</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.code" xml:space="preserve">
+    <value>الكود</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.enterCode" xml:space="preserve">
+    <value>اخل الكود</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.enterNewPassword" xml:space="preserve">
+    <value>ادخل كلمة السر الجديدة</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.newPassword" xml:space="preserve">
+    <value>كلمة السر الجديدة</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.notRecoverdMsg" xml:space="preserve">
+    <value>لم تتم الاستعادة !</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.recover" xml:space="preserve">
+    <value>إستعادة الحساب</value>
+  </data>
+  <data name="WriteNewPasswordViewModel.recoverdMsg" xml:space="preserve">
+    <value>تمت الاستعادة</value>
+  </data>
+  <data name="SettingViewModel.aboutUs" xml:space="preserve">
+    <value>من نحن</value>
+  </data>
+  <data name="SettingViewModel.contactUs" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+  <data name="SettingViewModel.termesOfUse" xml:space="preserve">
+    <value>شروط الاستخدام</value>
+  </data>
+</root>
